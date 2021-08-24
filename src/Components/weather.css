@@ -1,0 +1,95 @@
+.container{
+    min-width:80vw;
+    min-height:70vh;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.temp-container,.weather-info{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-direction: row; */
+}
+.temp-info,.place-feel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.temp-container{
+    height:250px;
+    min-width:500px;
+}
+.weather-info{
+    width:500px;
+    min-height:400px;
+    flex-wrap: wrap;
+}
+.temp-logo{
+    border: 2px solid black;
+    width:100px;
+    height:100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.temp-metrics{
+    min-width:100px;
+    height:auto;
+    border: 2px solid black;
+    font-size:2.5em;
+    font-weight: 600;
+}
+.temp-logo img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+.place,.feel{
+    border: 2px solid black;
+    min-width:300px;
+    height:100px;
+    text-align: center;
+}
+.place {
+    font-size: 3em;
+    font-weight: 600;
+    
+}
+.feel{
+    font-size:2.5em;
+
+}
+.div1,.div2,.div3,.div4,.div5,.div6{
+    border: 2px solid black;
+    width:130px;
+    height:130px;
+}
+.solar-details{
+    border: 2px solid black;
+    width:300px;
+    height:100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.image-size{
+    width:50px;
+    height:50px;
+}
+.image-size img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+.sunrise,.sunset{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
