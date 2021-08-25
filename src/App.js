@@ -18,7 +18,7 @@ function App() {
   const [templow,setTemplow]=useState('')
   const [temphigh,setTemphigh]=useState('')
   const [feellike,setFeellike]=useState('')
-
+const [icon,setIcon]=useState('')
   //to fetch our current geo location
   
   useEffect(() => {
@@ -31,6 +31,7 @@ function App() {
 
    axios.get(`${process.env.REACT_APP_API_URL}/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${process.env.REACT_APP_API_KEY}`)
    .then((result)=>{
+     console.log(result)
     setCity(result.data.name)
     setTemperature(result.data.main.temp)
     setSunrise(result.data.sys.sunrise)
@@ -42,6 +43,8 @@ function App() {
     setTemplow(result.data.main.temp_min)
     setTemphigh(result.data.main.temp_max)
     setFeellike(result.data.main.feels_like)
+    setIcon(result.data.weather[0].icon);
+    
    })
   }, [latitude,longitude])
   console.log(city)
@@ -61,7 +64,7 @@ function App() {
 <Weather city={city} temperature={temperature} sunrise={sunrise}
   sunset={sunset} humidity={humidity} pressure={pressure}
   main={main} description={description} templow={templow} temphigh
-={temphigh} feellike={feellike}/>
+={temphigh} feellike={feellike} icon={icon}/>
 </main>
 
 </>

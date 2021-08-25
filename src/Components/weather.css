@@ -31,8 +31,8 @@
 }
 .temp-logo{
     border: 2px solid black;
-    width:100px;
-    height:100px;
+    width:70px;
+    height:70px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -67,8 +67,12 @@
 }
 .div1,.div2,.div3,.div4,.div5,.div6{
     border: 2px solid black;
-    width:130px;
-    height:130px;
+    min-width:130px;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 .solar-details{
     border: 2px solid black;
@@ -92,4 +96,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.desp-img{
+    width:60px;
+    height:60px;
+}
+.desp-img img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+.descp{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.value{
+    font-weight: 400;
 }
